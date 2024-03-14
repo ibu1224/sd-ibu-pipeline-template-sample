@@ -8,6 +8,6 @@ config:
     image: node:20
   jobs:
     main:
-      [~commit]
+      requires: [ ~commit ]
       steps:
         - name: echo "pipeline template test"
