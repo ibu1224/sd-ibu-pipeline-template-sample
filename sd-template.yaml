@@ -11,3 +11,5 @@ config:
       requires: [ ~commit ]
       steps:
         - name: echo "pipeline template test"
+        - env
+        - export
