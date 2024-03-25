@@ -16,7 +16,8 @@ jobs:
     steps:
       - install_prerequisites: npm install -g screwdriver-template-main
       - publish:  pipeline-template-publish
-      - autotag: pipeline-template-tag --namespace ibu-test --name sd-ibu-pipeline-template --tag stable
+      - tag: pipeline-template-tag --namespace ibu-test --name sd-ibu-pipeline-template --version 1.0.2 --tag stable
+      - 
   remove:
       steps:
         - remove: npx -y -p screwdriver-template-main pipeline-template-remove --namespace ibu-test --name sd-ibu-pipeline-template
