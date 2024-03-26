@@ -24,3 +24,6 @@ config:
       steps:
         - env
         - export
+    use-template:
+      requires: []
+      template: ibu-test/test-1@latest
