@@ -19,6 +19,12 @@ config:
         - name: echo "pipeline template test"
         - env
         - export
+    build3:
+      requires: [ ~main ]
+      steps:
+        - name: echo "pipeline template test"
+        - env
+        - export
     detached:
       requires: []
       steps:
